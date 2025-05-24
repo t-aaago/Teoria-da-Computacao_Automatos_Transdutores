@@ -1,7 +1,6 @@
-"""
-1. [1.0 pt] Implemente AFDs, em uma linguagem de programação à sua escolha, que aceitem as seguintes cadeias:
-    b) Todas as cadeias em {a,b}* de modo que o último símbolo seja b e o número de símbolos a seja par.
-"""
+import sys
+import colorama
+import csv
 
 entradas = [ "b", "babab", "baab", "aab", "a", "ab", "bab", "aba"]
 
