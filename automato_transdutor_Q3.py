@@ -3,6 +3,11 @@ import colorama
 import csv
 
 estado_inicial = '0'
+
+alfabeto = {
+    '25', '50', '100'
+}
+
 transicoes = {
     '(0,25)': '25',
     '(0,50)': '50',
@@ -39,9 +44,9 @@ transducoes = {
     '(100,100)': '1',
 }
 
-entrada = ["100", "25", "25", "25", "25", "100", "50", "50", "100", "100", "25", "50", "25", "50", "25", "25", "100"]
+entrada = ["100", "25", "tiago","25", "25", "25", "100", "50", "50", "100", "100", "25", "50", "25", "50", "25", "25", "100"]
 
-def transdutor(entrada, estado_inicial, transicoes, transducoes):
+def transdutor(entrada, alfabeto, estado_inicial, transicoes, transducoes):
     estado_atual = estado_inicial
     saida = []
 
@@ -51,10 +56,10 @@ def transdutor(entrada, estado_inicial, transicoes, transducoes):
             saida.append(transducoes[f'({estado_atual},{simbolo})'])
             estado_atual = estado_seguinte
         except KeyError:
-            break;
+            continue
     return saida
 
-saida = transdutor(entrada, estado_inicial, transicoes, transducoes)
+saida = transdutor(entrada, alfabeto, estado_inicial, transicoes, transducoes)
 
 print(saida)
 
