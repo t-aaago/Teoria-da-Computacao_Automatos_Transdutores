@@ -1,6 +1,3 @@
-import sys
-import colorama
-import csv
 
 entradas = [
     '0', '0100', '100', '1', '1001','010', 'tiago', '0001000', 'manu', '00'

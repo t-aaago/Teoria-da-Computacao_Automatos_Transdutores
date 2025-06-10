@@ -1,6 +1,3 @@
-import sys
-import colorama
-import csv
 
 entradas = [ "b", "babab", "baab", "aab", "a", "ab", "bab", "aba", "tiago", "aabb", "manu"]
 

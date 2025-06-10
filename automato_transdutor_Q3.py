@@ -1,6 +1,4 @@
-import sys
-import colorama
-import csv
+
 
 estado_inicial = '0'
 
