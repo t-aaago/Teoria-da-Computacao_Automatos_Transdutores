@@ -4,9 +4,6 @@ import csv
 
 estado_inicial = '0'
 
-alfabeto = {
-    '25', '50', '100'
-}
 
 transicoes = {
     '(0,25)': '25',
@@ -46,7 +43,7 @@ transducoes = {
 
 entrada = ["100", "25", "tiago","25", "25", "25", "100", "50", "50", "100", "100", "25", "50", "25", "50", "25", "25", "100"]
 
-def transdutor(entrada, alfabeto, estado_inicial, transicoes, transducoes):
+def transdutor(entrada, estado_inicial, transicoes, transducoes):
     estado_atual = estado_inicial
     saida = []
 
@@ -59,7 +56,7 @@ def transdutor(entrada, alfabeto, estado_inicial, transicoes, transducoes):
             continue
     return saida
 
-saida = transdutor(entrada, alfabeto, estado_inicial, transicoes, transducoes)
+saida = transdutor(entrada, estado_inicial, transicoes, transducoes)
 
 print(saida)
 
